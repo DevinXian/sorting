@@ -1,6 +1,14 @@
 const { swap } = require('../../utils')
 
-function bubbleSort(list) {
+/**
+ * 冒泡排序
+ * @avgT O(n^2) : n + (n-1) + ... + 1
+ * @minT O(n)
+ * @maxT O(n^2)
+ * @space O(1) - 需要一个临时变量
+ * @param {Array} list
+ */
+module.exports = function bubbleSort(list) {
   let stop = false
   const len = list.length
 
@@ -20,5 +28,3 @@ function bubbleSort(list) {
   }
   return list
 }
-
-module.exports = bubbleSort
