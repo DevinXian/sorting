@@ -1,0 +1,13 @@
+{
+  "name": "sorting",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0"
+  },
+  "author": "luofeng <devinxian@gmail.com>"
+}
