@@ -1,4 +1,4 @@
-const { swap } = require('../../utils')
+const { swap } = require('../utils')
 
 /**
  * 选择排序
