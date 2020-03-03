@@ -2,10 +2,10 @@ const { swap } = require('../utils')
 
 /**
  * 快速排序
- * @avgT O(nlogn)
- * @minT O(nlogn)
- * @maxT O(n^2)
- * @space O(lgn) - 递归调用
+ * @avgT O(nlgn) 主定理可推导 - https://www.zhihu.com/question/22393997
+ * @minT O(nlgn) 推导见 avgT
+ * @maxT O(n^2) 有序情况下：如 asc 时，每次基准元素总是最小元素, n + (n-1) + (n-2) ... + 1
+ * @space O(lgn) - 递归调用,每一层1个变量空间，有lgn层
  * @stable false 源自于交换失序
  * @param {Array} arr
  * @param {number} start
