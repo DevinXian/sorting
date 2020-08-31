@@ -14,11 +14,15 @@ module.exports = function selectSort(arr) {
 
   // 当前循环安置下标为i 
   for (let i = 0; i < len - 1; i++) {
-    // 从下标 i+1 遍历到最后 len-1，不断比较交换，选出最大的
+    // 从下标 i+1 遍历到最后 len-1，不断比较交换，选出最小的放在i位置，有序序列增大
+    let index = i // index of min element
+
     for(let j = i + 1; j <= len - 1; j++) {
       if (arr[j] < arr[i]) {
-        swap(arr, i, j)
+        index = j
       }
+
+      swap(arr, i, index)
     }
   }
 
