@@ -20,9 +20,8 @@ module.exports = function selectSort(arr) {
     for(let j = i + 1; j <= len - 1; j++) {
       if (arr[j] < arr[i]) {
         index = j
+        swap(arr, i, index)
       }
-
-      swap(arr, i, index)
     }
   }
 
